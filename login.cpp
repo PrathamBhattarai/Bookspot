@@ -13,7 +13,7 @@ Login::Login(QWidget *parent)
 bool Login::dbOpen()
 {
     userInfo = QSqlDatabase::addDatabase("QSQLITE");
-    userInfo.setDatabaseName("F:/Qt Projects/Bookspot/Bookspot/database/info.db");
+    userInfo.setDatabaseName("/home/pratham/new/Bookspot/database/info.db");
     if (!userInfo.open())
     {
 
